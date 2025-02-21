@@ -1,0 +1,10 @@
+blockquote {
+    background-color: khaki;
+    font-family: tahoma;
+}
+blockquote:hover {
+    background-color: lavender;
+}
+a:hover {
+    font-color: red;
+}
