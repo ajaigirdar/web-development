@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Table</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Product Inventory</h1>
+
+<table>
+  <caption>Product Inventory Overview</caption>
+
+  <thead>
+  <tr>
+    <th>Product Name</th>
+    <th>Category</th>
+    <th>Price</th>
+    <th>Stock Status</th>
+  </tr>
+  </thead>
+
+  <tbody>
+
+  <tr>
+    <td>Smartphone</td>
+    <td rowspan="2">Electronics</td>
+    <td>$699</td>
+    <td>In Stock</td>
+  </tr>
+  <tr>
+    <td>Wireless Headphones</td>
+    <td>$199</td>
+    <td>Out of Stock</td>
+  </tr>
+
+  <tr>
+    <td>Gaming Chair</td>
+    <td>Furniture</td>
+    <td>$299</td>
+    <td>In Stock</td>
+  </tr>
+
+  <tr>
+    <td>Running Shoes</td>
+    <td rowspan="2">Sportswear</td>
+    <td>$120</td>
+    <td>In Stock</td>
+  </tr>
+  <tr>
+    <td>Gym Gloves</td>
+    <td>$25</td>
+    <td>In Stock</td>
+  </tr>
+
+  <!-- Bonus -->
+  <tr>
+    <td>Blender</td>
+    <td rowspan="2">Home Appliances</td>
+    <td>$89</td>
+    <td>In Stock</td>
+  </tr>
+  <tr>
+    <td>Microwave Oven</td>
+    <td>$250</td>
+    <td>Out of Stock</td>
+  </tr>
+  </tbody>
+
+  <tfoot>
+  <tr>
+    <td colspan="4">Total Products: 8</td>
+  </tr>
+  </tfoot>
+</table>
+
+</body>
+</html>
