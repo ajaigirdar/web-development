@@ -1,0 +1,182 @@
+/* reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background: #0071e3;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/water-bg.png') repeat top center/cover;
+    color: rgb(255, 255, 255);
+    padding: 120px 20px;
+    text-align: center;
+    position: relative;
+    oppacity: 50%;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #ff5733;
+    color: white;
+    padding: 12px 24px;
+    margin-top: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background: #e04e2b;
+}
+
+/* Features Section */
+
+.question {
+    background:#e8e1e1;
+    padding: 20px;
+}
+
+.features {
+    display: flex;
+    justify-content:space-evenly;
+    gap: 30px;
+    padding: 50px 10%;
+    /* flex-wrap: wrap; */
+}
+
+.feature {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 320px;
+}
+
+.feature img {
+    width: 100px;
+    height: auto;
+}
+
+
+/* Testimonials Section */
+.testimonials {
+    background: #eee;
+    padding: 40px 10%;
+}
+
+.testimonial {
+    background: white;
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 500px;
+    border-left: 5px solid #0071e3;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact input,
+.contact textarea {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact input:focus,
+.contact textarea:focus {
+    outline: none;
+    border-color: #0071e3;
+}
+
+button {
+    margin-top: 10px;
+    background: #ff5733;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.button:hover {
+    background: #9a2205;
+}
+
+/* Footer */
+footer {
+    background: #0071e3;
+    color: white;
+    padding: 20px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    color: #ff5733;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+}
