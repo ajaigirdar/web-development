@@ -47,6 +47,121 @@ nav a:hover {
     border-radius: 5px;
 }
 
+/* Hero Section */
+.hero {
+    background: url('images/store-1.jpg') repeat top center/cover;
+    color: rgb(255, 255, 255);
+    padding: 120px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px rgb(253, 234, 22);
+}
+
+.hero p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px rgba(216, 238, 24, 0.8);
+}
+
+.hero img {
+    width: 100%;
+    padding: 0px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #ff5733;
+    color: white;
+    padding: 12px 24px;
+    margin-top: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background: #e04e2b;
+}
+
+/* About Us Section */
+.first-section,
+.second-section,
+.third-section {
+    display: flex;
+    flex-wrap: wrap;  
+    padding: 0px;
+  }
+
+.first-content {
+    flex: 3;
+    padding: 0px 20px 0px 20px;
+    background-color: #a3b18a;
+    align-content: center;
+    color:black;
+  }
+  
+  .first-sidebar {
+    flex: 4;
+    padding: 0px;
+    background-color: #588157;
+    color:black;
+
+  }
+
+  .first-sidebar img {
+    width: 100%;
+    padding: 0px;
+}
+  
+.second-content {
+    flex: 4;
+    padding: 0px;
+    background-color: #588157;
+    align-content: center;
+
+  }
+
+  .second-content img {
+    width: 100%;
+    padding: 0px;
+
+  }
+  
+  .second-sidebar {
+    flex: 3;
+    padding: 0px 20px 0px 20px;
+    background-color: #a3b18a;
+    align-content: center;
+    color:black;
+  }
+
+.third-content {
+    flex: 3;
+    padding: 0px 20px 0px 20px;
+    background-color: #a3b18a;
+    align-content: center;
+
+  }
+  
+  .third-sidebar {
+    flex: 4;
+    background-color: #588157;
+    color:cornsilk;
+    align-content: center;
+  }
+
+  .third-sidebar img {
+    width: 100%;
+    padding: 0px;
+}
+
 /* Reset the form before styling */
 button,
 input,
@@ -70,7 +185,7 @@ textarea {
 }
 .contact {
     padding: 50px;
-    background-image: url('images/form-bg.png')
+    background: url('images/croissant.jpg') repeat top center/cover;
 }
 
 .contact form {
@@ -89,7 +204,7 @@ form {
     padding: 15px;
     /* border: 1px solid #ccc; */
     border-radius: 5px;
-    background: #20684451;
+    background: #206844c5;
 }
 
 input, select, textarea {
@@ -142,6 +257,10 @@ footer {
     background: #344e41;
     color: goldenrod;
     padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-around;
 }
 
 .social-links a {
@@ -159,9 +278,16 @@ footer {
 
 /* Tablet (max-width: 768px) */
 @media screen and (max-width: 768px) {
+    
+    /* Adjust Header */
     header {
         flex-direction: column;
         text-align: center;
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 18px; 
     }
 
     nav ul {
@@ -169,6 +295,66 @@ footer {
         gap: 10px;
     }
 
+    nav a {
+        display: block;
+        padding: 10px;
+    }
+
+    /* Adjust Hero Section */
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.2em;
+    }
+
+    .hero p {
+        font-size: 1.3em;
+    }
+
+    /* Adjust About Sections */
+    .first-section,
+    .second-section,
+    .third-section {
+        display: flex;
+        flex-direction: column; /* Stack sections vertically */
+    }
+
+    .first-content, .first-sidebar, 
+    .second-sidebar, .second-content, 
+    .third-content, .third-sidebar {
+        flex: 1;
+        padding: 0px;
+        gap: 0;
+    }
+
+    /* Stack in order */
+    .first-content {
+        order: 1;
+    }
+    
+    .first-sidebar {
+        order: 2;
+    }
+    
+    .second-sidebar {
+        order: 3;
+    }
+
+    .second-content {
+        order: 4;
+    }
+
+    .third-content {
+        order: 5;
+    }
+
+    .third-sidebar {
+        order: 6;
+    }
+
+    /* Adjust Contact Form */
     .contact {
         padding: 30px;
     }
@@ -178,56 +364,120 @@ footer {
     }
 
     form {
-        max-width: 90%;
+        max-width: 100%;
     }
 
-    input, select, textarea {
-        padding: 6px;
-    }
-
-    .submit {
-        width: 100%;
+    /* Adjust Footer */
+    footer {
+        text-align: center;
     }
 }
 
-/* Mobile (max-width: 480px) */
+/* Mobile Devices (max-width: 480px) */
 @media screen and (max-width: 480px) {
+    
+    /* Adjust Header */
     .logo {
-        font-size: 16px; 
+        font-size: 16px;
     }
 
     nav ul {
         flex-direction: column;
-        gap: 5px;
+        text-align: center;
     }
 
+    nav a {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .hero h1 {
+        font-size: 1.8em; 
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    /* Adjust About Sections */
+    .first-section,
+    .second-section,
+    .third-section {
+        display: flex;
+        flex-direction: column; /* Stack sections vertically */
+    }
+
+    .first-content, .first-sidebar, 
+    .second-sidebar, .second-content, 
+    .third-content, .third-sidebar {
+        flex: 1;
+        padding: 0px;
+        gap: 0;
+    }
+
+    /* Stack in order */
+    .first-content {
+        order: 1;
+    }
+    
+    .first-sidebar {
+        order: 2;
+    }
+    
+    .second-sidebar {
+        order: 3;
+    }
+
+    .second-content {
+        order: 4;
+    }
+
+    .third-content {
+        order: 5;
+    }
+
+    .third-sidebar {
+        order: 6;
+    }
+
+    /* Contact Section */
     .contact {
         padding: 20px;
     }
 
     .contact h2 {
-        font-size: 1.5em;
-    }
-
-    form {
-        max-width: 100%;
-        padding: 10px;
+        font-size: 1.6em;
     }
 
     input, select, textarea {
-        padding: 5px;
+        font-size: 14px;
+        padding: 6px;
     }
 
     .submit {
-        font-size: 1em;
-        padding: 8px 15px;
+        font-size: 14px;
+        padding: 8px 16px;
     }
 
+    /* Footer */
     footer {
-        padding: 10px;
+        font-size: 14px;
+        padding: 15px;
     }
 
     .social-links a {
-        padding: 5px 8px;
+        font-size: 14px;
+        padding: 6px 10px;
     }
 }
+
