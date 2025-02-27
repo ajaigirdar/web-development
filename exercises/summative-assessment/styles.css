@@ -264,16 +264,13 @@ footer {
 }
 
 .social-links a {
-    color: goldenrod;
-    text-decoration: none;
-    padding: 8px 12px;
+    padding: 8px 0px;
     margin: 0 10px;
 }
 
-.social-links a:hover {
-    color: rgb(186, 135, 7);
-    transition: 0.3s;
-
+.social-links img {
+    width: 30px;
+    height: 30px;
 }
 
 /* Tablet (max-width: 768px) */
