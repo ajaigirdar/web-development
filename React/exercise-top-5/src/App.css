@@ -1,0 +1,88 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.header, footer {
+  text-align: "center";
+  padding: "10px";
+  background: "#333";
+  color: "#fff";
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.body {
+  padding: "20px";
+  text-align: "center";
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+/* Body Container */
+.body-container {
+  padding: 20px;
+}
+
+/* Movie List */
+.movie-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Each Movie Item */
+.movie-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+/* Left Column - Poster */
+.poster-container {
+  flex: 1;
+  text-align: center;
+}
+
+.poster {
+  width: 150px;
+  border-radius: 8px;
+}
+
+/* Right Column - Movie Details */
+.details-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: 10px;
+}

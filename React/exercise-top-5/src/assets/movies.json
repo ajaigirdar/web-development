@@ -21,7 +21,7 @@
       "imdb_rating": 9.0,
       "plot": "When the menace known as the Joker emerges from his mysterious past, he creates chaos for Batman and Gotham.",
       "actors": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
-      "poster": "https://upload.wikimedia.org/wikipedia/en/8/8a/Dark_Knight.jpg"
+      "poster": "https://upload.wikimedia.org/wikipedia/en/1/1c/The_Dark_Knight_%282008_film%29.jpg"
     },
     {
       "title": "Inception",
@@ -29,7 +29,7 @@
       "imdb_rating": 8.8,
       "plot": "A thief who enters the dreams of others to steal secrets is tasked with planting an idea in someone's mind.",
       "actors": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Tom Hardy"],
-      "poster": "https://upload.wikimedia.org/wikipedia/en/7/7f/Inception_ver3.jpg"
+      "poster": "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg"
     },
     {
       "title": "Pulp Fiction",
@@ -37,7 +37,7 @@
       "imdb_rating": 8.9,
       "plot": "Multiple interwoven crime stories filled with witty dialogue and dark humor.",
       "actors": ["John Travolta", "Samuel L. Jackson", "Uma Thurman"],
-      "poster": "https://upload.wikimedia.org/wikipedia/en/8/82/Pulp_Fiction_cover.jpg"
+      "poster": "https://upload.wikimedia.org/wikipedia/en/3/3b/Pulp_Fiction_%281994%29_poster.jpg"
     }
   ]
   
