@@ -1,0 +1,43 @@
+[
+    {
+      "title": "The Shawshank Redemption",
+      "year": 1994,
+      "imdb_rating": 9.3,
+      "plot": "A banker, falsely imprisoned, bonds with a fellow inmate and devises an escape plan over decades.",
+      "actors": ["Tim Robbins", "Morgan Freeman"],
+      "poster": "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg"
+    },
+    {
+      "title": "The Godfather",
+      "year": 1972,
+      "imdb_rating": 9.2,
+      "plot": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      "actors": ["Marlon Brando", "Al Pacino", "James Caan"],
+      "poster": "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg"
+    },
+    {
+      "title": "The Dark Knight",
+      "year": 2008,
+      "imdb_rating": 9.0,
+      "plot": "When the menace known as the Joker emerges from his mysterious past, he creates chaos for Batman and Gotham.",
+      "actors": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
+      "poster": "https://upload.wikimedia.org/wikipedia/en/8/8a/Dark_Knight.jpg"
+    },
+    {
+      "title": "Inception",
+      "year": 2010,
+      "imdb_rating": 8.8,
+      "plot": "A thief who enters the dreams of others to steal secrets is tasked with planting an idea in someone's mind.",
+      "actors": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Tom Hardy"],
+      "poster": "https://upload.wikimedia.org/wikipedia/en/7/7f/Inception_ver3.jpg"
+    },
+    {
+      "title": "Pulp Fiction",
+      "year": 1994,
+      "imdb_rating": 8.9,
+      "plot": "Multiple interwoven crime stories filled with witty dialogue and dark humor.",
+      "actors": ["John Travolta", "Samuel L. Jackson", "Uma Thurman"],
+      "poster": "https://upload.wikimedia.org/wikipedia/en/8/82/Pulp_Fiction_cover.jpg"
+    }
+  ]
+  
