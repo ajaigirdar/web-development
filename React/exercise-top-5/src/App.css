@@ -17,8 +17,12 @@
 .body {
   padding: "20px";
   text-align: "center";
+  color: black;
 }
 
+.posts-div {
+  border: 1px red;
+}
 
 @keyframes logo-spin {
   from {
