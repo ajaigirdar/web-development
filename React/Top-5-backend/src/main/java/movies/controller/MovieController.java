@@ -1,9 +1,10 @@
 package movies.controller;
 
-
-import movies.data.model.Movie;
-import movies.data.repository.MovieRepository;
+import movies.model.Movie;
+import movies.data.MovieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.Serializable;
@@ -18,20 +19,23 @@ public class MovieController implements Serializable {
     @Autowired
     MovieRepository movieRepository;
 
+    // Read all movies
     @GetMapping()
-    public List<Movie> getResource() {
-        return movieRepository.findAll();
+    public ResponseEntity<List<Movie>> getResource() {
+        List<Movie> movies = movieRepository.findAll();
+        return ResponseEntity.ok(movies); // 200
     }
 
     // Create a new movie
     @PostMapping
-    public Movie addMovie(@RequestBody Movie movie) {
-        return movieRepository.save(movie);
+    public ResponseEntity<Movie> addMovie(@RequestBody Movie movie) {
+        Movie savedMovie = movieRepository.save(movie);
+        return ResponseEntity.status(HttpStatus.CREATED).body(savedMovie); // 201
     }
 
     // Update an existing movie
     @PutMapping("/{id}")
-    public Movie updateMovie(@PathVariable Long id, @RequestBody Movie updatedMovie) {
+    public ResponseEntity<Movie> updateMovie(@PathVariable Long id, @RequestBody Movie updatedMovie) {
         Optional<Movie> existingMovie = movieRepository.findById(id);
         if (existingMovie.isPresent()) {
             Movie movie = existingMovie.get();
@@ -41,21 +45,23 @@ public class MovieController implements Serializable {
             movie.setPlot(updatedMovie.getPlot());
             movie.setPoster(updatedMovie.getPoster());
             movie.setActors(updatedMovie.getActors());
-            return movieRepository.save(movie);
+            movie.setRanking(updatedMovie.getRanking());
+            Movie savedMovie = movieRepository.save(movie);
+            return ResponseEntity.ok(savedMovie); // 200
         } else {
-            return null;  // Movie not found
+            return ResponseEntity.notFound().build(); // 404
         }
     }
 
     // Delete a movie
     @DeleteMapping("/{id}")
-    public String deleteMovie(@PathVariable Long id) {
+    public ResponseEntity<String> deleteMovie(@PathVariable Long id) {
         Optional<Movie> movie = movieRepository.findById(id);
         if (movie.isPresent()) {
             movieRepository.delete(movie.get());
-            return "Movie deleted successfully";
+            return ResponseEntity.ok("Movie deleted successfully"); // 200
         } else {
-            return "Movie not found";
+            return ResponseEntity.notFound().build(); // 404
         }
     }
 
